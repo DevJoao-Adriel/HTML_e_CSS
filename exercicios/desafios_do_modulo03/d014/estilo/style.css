@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+thead{
+    background-color: gray;
+    color: white;
+}
+
+.zebrado {
+    background-color: gray;
+    color: white;
+}
