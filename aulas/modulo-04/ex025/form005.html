@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" value="F" checked><label for="isxfem">Feminino</label>
+        </fieldset>
+        
+        <!-- Para o radio de um mesmo tipo de informação tenho que colocar o mesmo (name="") pois ele limita marcar apenas um 
+        
+        checked faz com que já venha marcado assim que abrir o site 
+        -->
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esfut" id="iesbask" checked><label for="iesbask">Basket</label> <br>
+            <input type="checkbox" name="esfut" id="iesvol" checked><label for="iesvol">Vôlei</label> <br>
+            <input type="checkbox" name="esfut" id="iesnat"><label for="iesnat">Natação</label>
+        </fieldset>
+
+        <!-- Para o checkbox se colocar o mesmo (name="") não irá marcar apenas um isso funciona apenas no radio  -->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
