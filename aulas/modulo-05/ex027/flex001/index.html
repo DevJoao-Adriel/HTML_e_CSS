@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .container{
+            background-color: lightsalmon;
+            display: flex;
+            /*
+                flex-directions para o pai 
+                    flex-direction: 'row'; esse é o padrão (É essa que está no HTML deixa em horizontal/deitada) fica da esquerda para direita
+                    
+                    flex-direction: 'row-reverse'; Continua sendo horizontal porém fica da direita para esquerda
+
+                    flex-direction: 'column'; comum para celulares e fica em vertical com a direção de cima para baixo
+
+                    flex-direction: 'column-reverse'; mesmo formato do 'column' entretanto fica com a direção de baixo para cima
+
+                eixos(axis)
+                    isso representa o inicio e o fim de um bloco, tendo o main-axis e o cross-axis
+                    
+                    |------------------|
+                    |> > > > >         | flex-direction: 'row';
+                    |------------------|
+                    main-axis da esquerda para direita / main-start vai ser no canto superior esquerdo e o main-end vai ser no canto superior direito
+                    
+                    cross-axis de cima para baixo / cross-start vai ser no canto superior esquerdo e o cross-end vai ser no canto inferior esquerdo
+
+
+                    |------------------|
+                    |         < < < < <| flex-direction: 'row-reverse';
+                    |------------------|
+                    main-axis da direita para esquerda / main-start vai ser no canto superior direito e o main-end vai ser no canto superior esquerdo
+                    
+                    cross-axis de cima para baixo / cross-start vai ser no canto superior direito e o cross-end vai ser no canto inferior direito
+
+                    |-------|  flex-direction: 'column';
+                    |   v   |   
+                    |   v   |   main-axis vai de cima para baixo / main-start é no canto superior 
+                    |   v   |   esquerdo e o main-end é no canto inferior esquerdo 
+                    |       |   
+                    |-------|   cross-axis vai da esquerda para direita / cross-start é no canto 
+                                superior esquerdo e o cross-end é no canto superior direito
+
+                    |-------|  flex-direction: 'column-reverse';
+                    |       |   
+                    |   ^   |   main-axis vai de baixo para cima / main-start é no canto inferior 
+                    |   ^   |   esquerdo e o main-end é no canto superior esquerdo 
+                    |   ^   |   
+                    |-------|   cross-axis vai da esquerda para direita / cross-start é no canto 
+                                inferior esquerdo e o cross-end é no canto inferior direito
+            */
+        }
+
+        .item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
