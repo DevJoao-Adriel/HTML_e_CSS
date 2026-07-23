@@ -1,1 +1,23 @@
 @charset "UTF-8";
+
+@media screen and (max-width: 585px ){
+    header, header > nav {
+        flex-flow: column wrap;
+    }
+
+    header > h1{
+        flex: 0 0 50px;
+    }   
+
+    header > nav > a{
+        width: 90vw;
+    }
+
+    #burguer{
+        display: block;
+        background-color: black;
+        width: 90vw;
+        border-radius: 3px;
+        text-align: center;
+    }
+}
