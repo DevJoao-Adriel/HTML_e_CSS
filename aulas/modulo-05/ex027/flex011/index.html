@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible box</title>
     <style>
+        /*flex = flex-grow, flex-shrink, flex-basis*/
         .container{
             background-color: lightsalmon;
             display: flex;
@@ -15,17 +16,33 @@
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 250px;
+            flex-basis: 200px;
+        }
+
+        #caixaa{
+            flex-grow: 2;    
+            flex-shrink: 0;
+                
+        }
+
+        #caixab{
+            flex-grow: 4;
             flex-shrink: 1;
+            
+        }
+
+        #caixac{
             flex-grow: 1;
+            flex-shrink: 8;
+            
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="caixaa">A</div>
+        <div class="item" id="caixab">B</div>
+        <div class="item" id="caixac">C</div>
     </div>
 </body>
 </html>
