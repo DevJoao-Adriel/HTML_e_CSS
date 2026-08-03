@@ -7,11 +7,16 @@
     <style>
         .container{
             border: 3px solid black;
-            height: 250px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            gap: 5px;
+            /*grid-template-rows: 100px 100px 100px;
+            grid-template-columns: auto auto auto;*/
+            grid-template: 100px 100px 100px/ auto auto auto;
+            /*align-items: stretch;
+            justify-items: center;*/
+            place-items: stretch center;            
+            /*align-content: start;
+            justify-content: end;*/
+            place-content: start end;
         }
 
         .item{
@@ -30,6 +35,8 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
     </div>
 </body>
 </html>
